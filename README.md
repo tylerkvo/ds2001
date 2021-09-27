@@ -1,17 +1,15 @@
 ## Syllabus: DS 2001 – Programming for Data Science  
 
-#### Fall 2021
+Fall 2021
 
-### Lecture Times  
-Tues, Thurs 11am - 12:15pm
-
+Lecture Times: Tues, Thurs 11am - 12:15pm  
 Note: All times mentioned throughout the Collab site and Syllabus are Eastern Time (US)
 
-### Location: New Cabell Hall 383
+Location: New Cabell Hall 383
 
 ### Contact
 
-**Professor**
+**Professor**  
 Adam Tashman  
 apt4c@virginia.edu  
 
@@ -27,7 +25,6 @@ Date of Last Live Session: Dec 2, 2021
 Semester Project Presentation Date: Dec 2, 2021  
 Semester Project Due Date:  Dec 2, 2021 at 11:59 pm (final meeting day)  
 
-
 ### Textbooks 
 
 - **Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython,** 
@@ -37,6 +34,15 @@ Freely available through the library: https://learning.oreilly.com/library/view/
 - **R for Data Science: Import, Tidy, Transform, Visualize, and Model Data,** 
 1st Edition, Wickham and Grolemund. O'Reilly Media/ISBN: 978-1-4919-1039-9 	
 Free link to book: http://r4ds.had.co.nz   
+
+### Compute Environments
+
+There are two options:
+- Use your own machine
+- Use the **CEDS** virtual environment   
+  [Access CEDS](https://rdweb.wvd.microsoft.com/arm/webclient/index.html)  
+  [Instructions for using CEDS](https://github.com/UVADS/ds2001/blob/main/access_CEDS.docx)
+
 
 ### Course Description
 
@@ -162,8 +168,9 @@ Email / Communication
 
 **Homework Assignment Lateness Policy**
 - Please submit HW assignments on time  
-- If an issue will prompt late submission, email the TA in advance to explain the situation.   
-- If the HW is submitted late and it is not an excused lateness, 10% of the assignment total points will be deducted per day it is late.  
+- If an issue will prompt late submission, email the TA in advance to explain the situation    
+- If the HW is submitted late and it is not an excused lateness, 10% of the assignment total points will be deducted per day it is late   
+- After 5 days of unexcused lateness, it will not be accepted
 
 **Quizzes**
 - There will be several quizzes throughout the semester that will assess your knowledge of the various topics
