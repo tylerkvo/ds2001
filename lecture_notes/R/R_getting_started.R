@@ -35,7 +35,8 @@ plot(vals, sin(vals))
 ## TRY FOR YOURSELF ##
 # 1) Create your own sequence, and plot the tangent
 # of this sequence
-
+vals2 <- seq(0,10,.1)
+plot(vals2, tan(vals2))
 ###############################################
 # look at mpg dataset from ggplot2
 mpg
@@ -48,15 +49,16 @@ summary(mpg)
 
 # summarize a column
 summary(mpg$cty)
-
+summary(c(mpg$cty,mpg$hwy))
 
 ###########################################################
 ##  TRY FOR YOURSELF ##
 # 2) summarize a different column from mpg
-
+summary(mpg$year)
 # 3) compute the mean of a quantitative variable from mpg
-
+mean(mpg$cyl)
 # 4) create a boxplot of cty (y-axis) vs class (x-axis)
+boxplot(cty ~ class, data = mpg, col = "purple")
 ###########################################################
 
 # first few records
@@ -98,7 +100,7 @@ class(mpg$displ)
 ?mpg
 
 # plot engine size vs fuel efficiency on hwy
-ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy))
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color='red'))
 # inverse relationship - efficiency generally falls with engine size
 
 # show the model as various colors
@@ -107,7 +109,7 @@ ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color=model))
 ###########################################################
 ##  TRY FOR YOURSELF ##
 # 5) Rebuild the plot using y = cty
-ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = cty, color=model))
+ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = cty, color=model))+ labs(title = "Displacement vs. City")
 
 
 ###############################################
@@ -163,6 +165,10 @@ class(full_path)
 # small example of building model formula
 (form <- paste("y", "~", "x1 + x2"))
 
+response_var <- 'applied' # y variable
+predictors <- "x1 + x2"
+(formula1<- paste(response_var, '~', predictors))
+class(formula1)
 ###############################################
 # Directories, environment
 
@@ -181,11 +187,15 @@ list.files(getwd())
 #    from your working directory.
 #    For example, if your working directory is /data/waves,
 #    one folder up would be /data
+setwd("/Users/")
+list.files(getwd())
 ###########################################################
 
 # create a few objects to see them in the environment
 xx <- 10
-sin_test <- function(x){print(sin(x))}
+sin_test <- function(x){
+  print(sin(x))
+  }
 
 # list objects in global environment
 ls()

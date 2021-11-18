@@ -41,6 +41,7 @@ filter(flights, air_time < 700 | air_time > 1500)
 ## TRY FOR YOURSELF ##
 # 1) Filter the flights data using multiple conditions
 #    Print the results to verify they make sense
+(filter(flights, month == 1, air_time> 500))
 
 # does the output make sense?
 filter(flights, air_time < 700 & air_time > 1500)
